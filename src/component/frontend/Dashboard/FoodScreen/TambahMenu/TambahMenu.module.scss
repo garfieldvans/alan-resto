@@ -14,16 +14,19 @@
     padding: 1rem;
 
     .title {
-      font-size: 16px;
+      font-size: 17px;
       font-weight: 600;
       color: #00acee;
     }
 
     .form {
-      p {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+      span {
         font-size: 16px;
-        font-weight: 400;
         color: #444444;
+        margin-top: 0.5rem;
       }
 
       .inputNama {
@@ -71,11 +74,13 @@
 
 
         p{
+            display: flex;
             height: 2rem;
-            width: 10%;
-            text-align: center;
+            width: 8%;
             background: #00acee;
             color: #efefef;
+            align-items: center;
+            justify-content: center;
         }
 
         input{
@@ -85,6 +90,26 @@
             width: 100%;
         }
       }
+    }
+
+    .simpanBtn{
+        margin-top: 1rem;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+
+        button{
+            background: #7CAF84;
+            color: #efefef;
+            border: 0;
+            font-size: 16px;
+            font-weight: 500;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+        }
     }
   }
 }

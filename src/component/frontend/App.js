@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import './App.css';
-import ScreenRouter from './component/frontend/Router/ScreenRouter';
+import ScreenRouter from './Router/ScreenRouter';
 
 function App() {
   useEffect(() => {

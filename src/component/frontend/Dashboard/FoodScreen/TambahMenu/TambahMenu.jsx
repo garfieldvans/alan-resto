@@ -11,13 +11,13 @@ const TambahMenu = () => {
     <div className={css.wrapper}>
       <div className={css.container}>
         <div className={css.title}>
-          <p>Tambahkan Menu</p>
+          <span>Tambahkan Menu</span>
         </div>
         <div className={css.form}>
-          <p>Name Menu</p>
+          <span>Nama Menu</span>
           <input type="text" className={css.inputNama} />
 
-          <p>Gambar</p>
+          <span>Gambar</span>
 
           <form
             action=""
@@ -44,11 +44,15 @@ const TambahMenu = () => {
             }
           </form>
 
-          <p>Harga</p>
+          <span>Harga</span>
           <div className={css.harga}>
             <p>Rp.</p>
             <input type="text" />
           </div>
+        </div>
+
+        <div className={css.simpanBtn}>
+            <button>Simpan</button>
         </div>
       </div>
     </div>
