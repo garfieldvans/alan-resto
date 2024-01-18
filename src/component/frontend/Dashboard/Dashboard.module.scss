@@ -1,31 +1,35 @@
 .wrapper {
   .container {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 8%;
+    padding-right: 8%;
     background: #fff;
     .tabMenu {
       display: flex;
       gap: 1rem;
       .tab {
-        padding: 0.5rem;
+        display: flex;
+        list-style: none;
+        gap: 3rem;
         cursor: pointer;
-        text-align: center;
         font-size: 18px;
         font-weight: 600;
-        width: 5rem;
 
-        &.active {
-          border-bottom: 3px solid #00ACEE ;
-          color: #00ACEE;
+        a {
+          text-decoration: none;
+          color: #000;
+          &.active {
+            border-bottom: 3px solid #00acee;
+            color: #00acee;
+          }
         }
       }
     }
-}
-.tabContent {
-  border: 1px solid #ccc;
-  padding-left: 5rem;
+  }
+  .tabContent {
+    border: 1px solid #ccc;
+    padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-}
+  }
 }

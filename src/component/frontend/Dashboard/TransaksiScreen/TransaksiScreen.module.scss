@@ -1,7 +1,8 @@
 
 .wrapper{
-    // position: relative;
-    top: 0;
+    height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
 
     .container{
         margin-top: 1.5rem;
@@ -47,10 +48,11 @@
             flex-direction: column;
             background: #fff;
             height: max-content;
-            padding: 1rem;
-            width: 35%;
-            height: 50vh;
+            padding: 1.3rem;
+            width: 31%;
+            min-height: 40vh;
             justify-content: space-between;
+            box-shadow: 0px 0px 5px   #9b9b9b;
 
             .top{
                 display: flex;
@@ -77,8 +79,9 @@
                     align-items: center;
 
                     img{
-                        width: 3.5rem;
-                        object-fit: contain;
+                        width: 3rem;
+                        height: auto;
+                        object-fit: cover;
                     }
 
                     :nth-child(2){
@@ -94,7 +97,7 @@
                     :nth-child(4){
                         font-size: 16px;
                         font-weight: 500;
-                        width: 5rem;
+                        // width: 3rem;
                         color: #00acee;
                     }
                 }

@@ -2,6 +2,8 @@ import React from "react";
 import css from "./FoodScreen.module.scss";
 import { FiPlus } from "react-icons/fi";
 import { data } from "../../../backend/utils/data";
+import { Link } from "react-router-dom";
+import TambahMenu from "./TambahMenu/TambahMenu";
 
 const FoodScreen = () => {
   const formatCurrency = (value) => {
@@ -17,8 +19,11 @@ const FoodScreen = () => {
 
         <div className={css.menuTable}>
           <div className={css.btn}>
-            <FiPlus size={20}/>
-            <p>Tambah Menu</p>
+          <Link to="/tambah-menu">
+              <FiPlus size={20} />
+              <p>Tambah Menu</p>
+            </Link>
+            
           </div>
           <div className={css.table}>
             <table className={css.tableWrapper}>

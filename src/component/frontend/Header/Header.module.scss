@@ -1,7 +1,7 @@
 .wrapper {
   background: #00acee;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 
@@ -12,11 +12,11 @@
       align-items: center;
       gap: 1rem;
 
-      .logo{
+      .logo {
         color: white;
       }
 
-      .restoName{
+      .restoName {
         color: aliceblue;
         font-size: 20px;
         font-weight: 600;

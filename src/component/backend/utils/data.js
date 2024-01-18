@@ -49,3 +49,8 @@ export const data = [
   },
   // Add more data as needed
 ];
+
+export const menu = [
+  { nama: "Food", link: "/" },
+  { nama: "Transaksi", link: "/transaksi" },
+];

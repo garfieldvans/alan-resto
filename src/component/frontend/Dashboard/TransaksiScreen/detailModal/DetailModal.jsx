@@ -3,7 +3,6 @@ import { IoClose } from "react-icons/io5";
 import css from "./DetailModal.module.scss";
 
 const DetailModal = ({ isOpen, onRequestClose, selectedData, totalBill }) => {
-  const [rowsToShow, setRowsToShow] = useState(4);
 
   if (!isOpen) {
     return null;
@@ -16,18 +15,13 @@ const DetailModal = ({ isOpen, onRequestClose, selectedData, totalBill }) => {
     }).format(value);
   };
 
-  const handleShowMore = () => {
-    // You can adjust the number of rows to show more
-    setRowsToShow(rowsToShow + 5); // For example, show additional 5 rows
-  };
-
   return (
     <div className={css.wrapper}>
       <div className={css.container}>
-        <div className={css.closeBtn}>
+        {/* <div className={css.closeBtn}>
           <button onClick={onRequestClose}><IoClose size={30}/></button>
-        </div>
-        <h4>Detail Pesanan</h4>
+        </div> */}
+        <p className={css.title}>Detail Pesanan</p>
         <div className={css.modalOverlay} >
           <div
             className={css.modalContent}
@@ -44,7 +38,7 @@ const DetailModal = ({ isOpen, onRequestClose, selectedData, totalBill }) => {
                   </tr>
                 </thead>
                 <tbody>
-                  {selectedData.slice(0, rowsToShow).map((selectedItem, i) => {
+                  {selectedData.map((selectedItem, i) => {
                     console.log(selectedItem.id);
                     return (
                       <tr key={selectedItem.id}>
@@ -55,7 +49,7 @@ const DetailModal = ({ isOpen, onRequestClose, selectedData, totalBill }) => {
                         <td>
                           <img
                             src={selectedItem.photo}
-                            alt={`Product ${selectedItem.name}`}
+                            alt={`Menu ${selectedItem.name}`}
                             className={css.img}
                           />
                         </td>

@@ -1,12 +1,15 @@
+import { useEffect } from 'react';
 import './App.css';
-import Dashboard from './component/frontend/Dashboard/Dashboard';
-import Header from './component/frontend/Header/Header';
+import ScreenRouter from './component/frontend/Router/ScreenRouter';
 
 function App() {
+  useEffect(() => {
+    // Kode untuk mengubah judul halaman web
+    document.title = "Welcome to Alan Resto";
+  }, []); 
   return (
     <div className="App">
-      <Header/>
-      <Dashboard/>
+      <ScreenRouter/>
     </div>
   );
 }

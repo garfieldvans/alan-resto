@@ -1,7 +1,11 @@
 .wrapper {
   width: 100%;
 
+
   .container {
+
+    padding-left: 10%;
+    padding-right: 10%;
     p {
       color: #9c9c9c;
       font-size: 18px;
@@ -25,7 +29,11 @@
         border-radius: 5px;
         cursor: pointer;
 
-        :nth-child(1) {
+        a {
+          display: flex;
+          gap: 0.5em;
+          align-items: center;
+          text-decoration: none;
           color: white;
           margin-right: 0.5rem;
         }
