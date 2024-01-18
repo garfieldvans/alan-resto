@@ -1,0 +1,152 @@
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 4rem;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+//   overflow-y: hidden;
+  background: #0000009c;
+  justify-content: center;
+//   position: sticky;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 50%;
+    height: fit-content;
+    min-height: 50vh;
+    padding: 0.5rem;
+    border-radius: 5px;
+
+    .closeBtn {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      button {
+        background: rgb(255, 255, 255);
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: 0;
+        width: 3rem;
+      }
+    }
+
+    .modalOverlay {
+      margin-top: -20px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      display: flex;
+      justify-content: space-between;
+
+      .modalContent {
+        width: 50%;
+        .table {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          .tableWrapper {
+            width: 100%;
+            max-height: 8rem;
+            overflow-y: scroll;
+
+            thead {
+              background: whitesmoke;
+
+              tr {
+                th {
+                  text-align: center;
+                  background: #dedede;
+                  height: 2rem;
+                  font-size: 16px;
+                }
+              }
+            }
+
+            tbody {
+              tr {
+                td {
+                  font-size: 16px;
+                  padding-left: 0.7rem;
+                  padding-right: 0.7rem;
+                  text-align: center;
+                  border-bottom: 1px solid #ddd;
+
+                  .img {
+                    justify-content: center;
+                    object-fit: cover;
+                    width: 3rem;
+                    height: 2.4rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+      .line {
+        background: #717171;
+        width: 2px;
+        margin-bottom: 2rem;
+      }
+
+      .transaksi {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        p {
+          width: 100%;
+          text-align: center;
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+        input {
+          height: 1.5rem;
+          border: 2px solid #b8b8b8;
+          border-radius: 5px;
+          margin-bottom: 0.7rem;
+        }
+
+        .btn {
+          display: flex;
+          justify-content: space-between;
+          // background: #000;
+          width: 100%;
+
+          button {
+            width: 45%;
+            height: 1.5rem;
+            font-size: 14px;
+            background: #ffffff;
+            border: 2px solid #b8b8b8;
+            border-radius: 5px;
+          }
+
+          :nth-child(2){
+            color: #fff;
+            border: 0;
+            background: #00ACEE;
+          }
+        }
+
+        span{
+            margin-top: 0.5rem;
+            font-size: 16px;
+            font-weight: 600;
+            color: #b50624;
+        }
+      }
+    }
+  }
+}

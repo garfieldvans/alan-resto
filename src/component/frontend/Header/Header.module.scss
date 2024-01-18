@@ -1,0 +1,26 @@
+.wrapper {
+  background: #00acee;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  .container {
+    .logos {
+      color: aliceblue;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .logo{
+        color: white;
+      }
+
+      .restoName{
+        color: aliceblue;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.wrapper {
+  .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background: #fff;
+    .tabMenu {
+      display: flex;
+      gap: 1rem;
+      .tab {
+        padding: 0.5rem;
+        cursor: pointer;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        width: 5rem;
+
+        &.active {
+          border-bottom: 3px solid #00ACEE ;
+          color: #00ACEE;
+        }
+      }
+    }
+}
+.tabContent {
+  border: 1px solid #ccc;
+  padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+}

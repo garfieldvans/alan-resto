@@ -1,0 +1,167 @@
+
+.wrapper{
+    // position: relative;
+    top: 0;
+
+    .container{
+        margin-top: 1.5rem;
+        display: flex;
+
+        .menu{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            width: 70%;
+
+            .menuCard{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                width: 11rem;
+                text-align: center;
+                background: #fff;
+                border-radius: 0.2rem;
+                box-shadow: 6px 6px 4px #DEDEDE;
+                height: 13rem;
+                cursor: pointer;
+
+                img{
+                    height: 8.5rem;
+                    object-fit: cover;
+                }
+
+                :nth-child(2){
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                :nth-child(3){
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #00acee;
+                }
+            }
+        }
+
+        .transaksi{
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            height: max-content;
+            padding: 1rem;
+            width: 35%;
+            height: 50vh;
+            justify-content: space-between;
+
+            .top{
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                justify-content: center;
+
+                :nth-child(1){
+                    border: 2px solid black;
+                    border-radius: 100%;
+                    padding: 0.1rem;
+                }
+            }
+
+            .items{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+                .itemCard{
+                    width: 100%;
+                    justify-content: space-between;
+                    display: flex;
+                    align-items: center;
+
+                    img{
+                        width: 3.5rem;
+                        object-fit: contain;
+                    }
+
+                    :nth-child(2){
+                        font-size: 16px;
+                        font-weight: 500;
+                        width: 6rem;
+                    }
+                    :nth-child(3){
+                        font-size: 16px;
+                        font-weight: 700;
+                        width: 1.3rem;
+                    }
+                    :nth-child(4){
+                        font-size: 16px;
+                        font-weight: 500;
+                        width: 5rem;
+                        color: #00acee;
+                    }
+                }
+            }
+
+            .bottom{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                margin-top: auto;
+                .clearBtn{
+                    width: 100%;
+                    button{
+                        cursor: pointer;
+                        width: 100%;
+                        background: #fff;
+                        color: #D24646;
+                        border: 2px solid #D24646;
+                        align-items: center;
+                        padding-top: 0.4rem;
+                        padding-bottom: 0.4rem;
+                        font-size: 16px;
+                        font-weight: 600;
+                        border-radius: 5px;
+                    }
+                }
+
+                .printBtn{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    button {
+                        text-align: center;
+                        width: 48%;
+                        padding-top: 0.4rem;
+                        padding-bottom: 0.4rem;
+                        font-size: 16px;
+                        font-weight: 600;
+                        border-radius: 5px;
+                        border: 0;
+                        background: #7CB083;
+                        color: #fff;
+                    }
+                }
+
+                .submitBtn{
+                    width: 100%;
+                    button{ 
+                        display: flex;
+                        justify-content: center;
+                        gap: 0.5rem;
+                        cursor: pointer;
+                        width: 100%;
+                        background: #00acee;
+                        color: #fff;
+                        align-items: center;
+                        font-size: 16px;
+                        font-weight: 600;
+                        border: 0;
+                        border-radius: 5px;
+                        height: 2rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
